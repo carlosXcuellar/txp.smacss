@@ -9,6 +9,7 @@
 
 // HEADER
 .l-header {
+  @include outer-container;
   padding: 10px;
 }
 
@@ -44,9 +45,25 @@
 
 // FOOTER
 .l-footer {
+  @include outer-container;
   @include font-size (1.2);
-  padding: 5px 20px 0 5px;
+  padding: 20px 0;
+  max-width: 900px;
   border-top: 1px dashed $light-gray;
+}
+
+.l-footer--nav {
+  @include media($small-screen)  {
+    @include span-columns(8);
+  }
+}
+
+.l-footer--credits {
+  @include media($small-screen)  {
+    @include span-columns(4);
+    text-align: right;
+  }
+  padding-left: 5px;
 }
 
 // LAYOUT HELPERS

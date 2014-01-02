@@ -5,8 +5,9 @@
 
 // INLINE LIST
 .list_inline {
-  list-style-type: none;
+  display: inline;
   padding-left: 0;
+  list-style-type: none;
   li {
     @include inline-block;
     padding-right: 5px;

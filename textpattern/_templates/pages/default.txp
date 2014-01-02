@@ -41,14 +41,6 @@
 
 	<link rel="stylesheet" href="<txp:site_url />txp.smacss/css/application.css">
 
-<!-- HTML5/Media Queries support for IE8 (you can remove this section and the corresponding 'js' directory file if you don't intend to support IE8) -->
-  <!--[if lt IE 9]>
-    <script src="<txp:site_url />js/html5shiv.js"></script>
-    <txp:css format="link" media="" name="ie8" />
-  <![endif]-->
-    
-	<script src="<txp:site_url />txp.smacss/js/vendor/custom.modernizr.js"></script>    
-
 </head>
 
 <body class="<txp:if_section name=""><txp:if_search>search<txp:else />front</txp:if_search><txp:else /><txp:section /></txp:if_section>-page">
@@ -152,16 +144,16 @@
 
   <!-- footer -->
   <footer role="contentinfo" class="l-footer">
-    <nav role="navigation" class="l-content" aria-label="<txp:text item="navigation" />">
+    <nav role="navigation" class="l-footer--nav" aria-label="<txp:text item="navigation" />">
       <txp:section_list default_title='<txp:text item="home" />' include_default="1" wraptag="ul" break="" class="list_inline">
         <li<txp:if_section name='<txp:section />'><txp:if_search><txp:else /><txp:if_category><txp:else /><txp:if_author><txp:else /> class="active"</txp:if_author></txp:if_category></txp:if_search></txp:if_section>>
           <txp:section title="1" link="1" />
         </li>
       </txp:section_list>
     </nav>
-    <p class="l-aside text-right">
+    <div class="l-footer--credits">
       <txp:text item="published_with" /> <a rel="external" href="http://textpattern.com" title="<txp:text item="go_txp_com" />">Textpattern CMS</a>.
-    </p>
+    </div>
   </footer>
 
   <!-- add your own JavaScript here -->
