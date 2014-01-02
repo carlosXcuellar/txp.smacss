@@ -28,34 +28,27 @@
 </head>
 
 <body class="error-page">
+  <div class="l-container">
 
-<!-- header -->
-  <header role="banner" class="row">
-  	<div class="large-12 columns">
-	    <h1><txp:link_to_home><txp:site_name /></txp:link_to_home></h1>
-    	<h3><txp:site_slogan /></h3>
-  	</div>
-  </header>
-
-<!-- navigation -->
-  <nav role="navigation" class="site-navigation row" aria-label="<txp:text item="navigation" />">
-  	<div class="large-12 columns">    
-      <txp:section_list default_title='<txp:text item="home" />' include_default="1" wraptag="ul" break="li" class="inline-list">
-  		  <txp:section title="1" link="1" />
-      </txp:section_list>   
-    </div>
-  </nav>
-        
-  <div class="row">
+    <!-- header and navigation -->
+    <header role="banner" class="l-header">
+      <div class="l-header--brand">
+        <h1><txp:link_to_home><txp:site_name /></txp:link_to_home></h1>
+        <h3><txp:site_slogan /></h3>
+      </div>
+      <div class="l-header--nav">
+        <txp:output_form form="tf_primary_navigation" />
+      </div>
+    </header>
 
 <!-- left (main) column -->
-    <main role="main" class="large-8 columns" aria-label="<txp:text item="main_content" />">
-      <h1 class="error-status"><txp:error_status /></h1>
-      <p class="error-msg"><txp:error_message /></p>
+    <main role="main" class="l-content" aria-label="<txp:text item="main_content" />">
+      <h1 class=""><txp:error_status /></h1>
+      <p class="alert_error"><txp:error_message /></p>
     </main>
 
 <!-- right (complementary) column -->
-    <div role="complementary" class="large-4 columns">
+    <aside role="complementary" class="l-aside">
     
       <txp:output_form form="tf_search_form" />
 
@@ -64,12 +57,12 @@
 
       <h4><txp:text item="external_links" /></h4>
       <txp:linklist wraptag="ul" break="li" class="no-bullet" limit="10" /> <!-- links by default to form: 'plainlinks.link.txp' unless you specify a different form -->
-    </div> <!-- /complementary -->
+    </aside> <!-- /complementary -->
 
   </div> <!-- /.row -->
 
 <!-- footer -->
-  <footer role="contentinfo" class="row">
+  <footer role="contentinfo" class="l-footer">
 	  <div class="large-12 columns">    
       <p><small><txp:text item="published_with" /> <a rel="external" href="http://textpattern.com" title="<txp:text item="go_txp_com" />">Textpattern CMS</a>.</small></p>
 	  </div>

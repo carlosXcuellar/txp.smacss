@@ -1,15 +1,61 @@
-//  LAYOUT HELPERS
+// GLOBAL LAYOUT
 ///////////////////////////////////////////////////////////////////////////////
 
-@mixin l-constrained() {
-  margin: 0 auto;
-  max-width: 720px;
-  width: 95%;
-  @media only screen and (min-width: $small-screen) {
-    width: 90%;
+// GRID CONTAINER
+.l-container {
+  @include outer-container;
+  max-width: 900px;
+}
+
+// HEADER
+.l-header {
+  padding: 10px;
+}
+
+.l-header--brand {
+  @include media($small-screen)  {
+    @include span-columns(8);
   }
 }
 
-.l-constrained {
-  @include l-constrained();
+.l-header--nav {
+  @include media($small-screen)  {
+    @include span-columns(4);
+    text-align: right;
+  }
+  text-align: center;
+}
+
+// MAIN COLUMN CONTENT
+.l-content {
+  @include media($small-screen)  {
+    @include span-columns(8);
+  }
+  padding: 10px;
+}
+
+// SIDEBAR
+.l-aside {
+  @include media($small-screen)  {
+    @include span-columns(4);
+  }
+  padding: 10px;
+}
+
+// FOOTER
+.l-footer {
+  @include font-size (1.2);
+  padding: 5px 20px 0 5px;
+  border-top: 1px dashed $light-gray;
+}
+
+// LAYOUT HELPERS
+///////////////////////////////////////////////////////////////////////////////
+
+.l-right {
+  float: right;
+}
+
+.l-left {
+  float: left;
 }
