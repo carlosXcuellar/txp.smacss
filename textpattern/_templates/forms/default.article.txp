@@ -1,4 +1,4 @@
-<article role="article" itemscope itemtype="http://schema.org/Article">
+<article class="post" role="article" itemscope itemtype="http://schema.org/Article">
 
   <!-- if not an individual article then make the title h1 a link -->
   <txp:if_individual_article>

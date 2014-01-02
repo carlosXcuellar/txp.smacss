@@ -47,7 +47,7 @@
     <section id="comments-form">
 
       <!-- comment invite text is taken for the article's comment invitation field on the 'write' screen -->
-      <h3><txp:comments_invite showcount="0" textonly="1" showalways="1" /></h3>
+      <h4><txp:comments_invite showcount="0" textonly="1" showalways="1" /></h4>
 
       <txp:comments_form isize="32" msgcols="64" msgrows="4" /> <!-- links by default to form: 'comment_form.comment.txp' unless you specify a different form -->
     </section>

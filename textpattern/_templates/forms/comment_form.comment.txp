@@ -7,21 +7,22 @@
 
 <fieldset>
 
-  <p><label for="name"><txp:text item="comment_name" /> <b class="required" title="<txp:text item="required" />">*</b></label><br>
+  <p><label for="name"><txp:text item="comment_name" /> <b class="required" title="<txp:text item="required" />">*</b></label>
   <txp:comment_name_input /></p>
 
-  <p><label for="email"><txp:text item="comment_email" /> <b class="required" title="<txp:text item="required" />">*</b></label><br>
+  <p><label for="email"><txp:text item="comment_email" /> <b class="required" title="<txp:text item="required" />">*</b></label>
   <txp:comment_email_input /></p>
 
-  <p><label for="web"><txp:text item="comment_web" /></label><br>
+  <p><label for="web"><txp:text item="comment_web" /></label>
   <txp:comment_web_input /></p>
 
-  <p><txp:comment_remember /></p>
+  <!-- <p><txp:comment_remember /></p> -->
+  <p><label for="remember"></label><input type="checkbox" name="remember" value="1" id="remember" checked="checked" class="checkbox active"> Remember
+  <input type="hidden" value="remember" name="checkbox_type"></p>
 
-  <p class="small"><label for="message"><txp:text item="comment_message" /> <b class="required" title="<txp:text item="required" />">*</b></label><br>
+  <p><label for="message"><txp:text item="comment_message" /> <b class="required" title="<txp:text item="required" />">*</b></label>
   <txp:comment_message_input /></p>
 
+  <!-- preview and submit buttons (note: submit button will have a class of 'disabled' applied until you have previewed the message at least once) -->
+  <p><txp:comment_preview /> <txp:comment_submit /></p>
 </fieldset>
-
-<!-- preview and submit buttons (note: submit button will have a class of 'disabled' applied until you have previewed the message at least once) -->
-<p><txp:comment_preview /> <txp:comment_submit /></p>

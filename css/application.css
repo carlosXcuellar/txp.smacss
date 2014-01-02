@@ -655,6 +655,9 @@ dl {
     .alert_info a:hover {
       color: #081b1f; }
 
+.post {
+  margin-bottom: 40px; }
+
 .button, .button_small, .button_large, .button_full, .button_positive, .button_negative, .button_warning, .button_secondary, .button_disabled, button,
 input[type="submit"] {
   font-size: 14px;
