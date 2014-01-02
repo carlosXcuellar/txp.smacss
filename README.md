@@ -5,6 +5,7 @@ A barebones Textpattern theme using [Bourbon](http://bourbon.io/) and [Neat](htt
 
 Requires [cnk_versioning](https://github.com/cuellarllar/txp.smacss/blob/master/textpattern/plugins/cnk_versioning.txt) plugin.
 
+Demo site: [http://txp-smacss.carloscuellar.net/](http://txp-smacss.carloscuellar.net/)
 
 ## Install
 
