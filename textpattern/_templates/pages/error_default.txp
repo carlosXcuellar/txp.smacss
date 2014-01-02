@@ -2,81 +2,81 @@
 <html lang="<txp:lang />" dir="<txp:text item="lang_dir" />">
 
 <head>
-    <title><txp:error_status /></title>
-    <meta charset="utf-8">
-    <meta name="generator" content="Textpattern CMS">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="none">
+  <title><txp:error_status /></title>
+  <meta charset="utf-8">
+  <meta name="generator" content="Textpattern CMS">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="none">
 
 <!-- content feeds -->
-    <txp:feed_link flavor="atom" format="link" label="Atom" />
-    <txp:feed_link flavor="rss" format="link" label="RSS" />
-    <txp:rsd />
+  <txp:feed_link flavor="atom" format="link" label="Atom" />
+  <txp:feed_link flavor="rss" format="link" label="RSS" />
+  <txp:rsd />
 
 <!-- css -->
 
-	<link rel="stylesheet" href="<txp:site_url />txp.foundation/css/foundation.css">
+	<link rel="stylesheet" href="<txp:site_url />txp.smacss/css/application.css">
 	
 <!-- HTML5/Media Queries support for IE8 (you can remove this section and the corresponding 'js' directory file if you don't intend to support IE8) -->
-    <!--[if lt IE 9]>
-        <script src="<txp:site_url />js/html5shiv.js"></script>
-        <txp:css format="link" media="" name="ie8" />
-    <![endif]-->
+  <!--[if lt IE 9]>
+    <script src="<txp:site_url />js/html5shiv.js"></script>
+    <txp:css format="link" media="" name="ie8" />
+  <![endif]-->
 
-	<script src="<txp:site_url />txp.foundation/js/vendor/custom.modernizr.js"></script>
+	<script src="<txp:site_url />txp.smacss/js/vendor/custom.modernizr.js"></script>
 	
 </head>
 
 <body class="error-page">
 
 <!-- header -->
-    <header role="banner" class="row">
-		<div class="large-12 columns">
-    	    <h1><txp:link_to_home><txp:site_name /></txp:link_to_home></h1>
-        	<h3><txp:site_slogan /></h3>
-		</div>
-    </header>
+  <header role="banner" class="row">
+  	<div class="large-12 columns">
+	    <h1><txp:link_to_home><txp:site_name /></txp:link_to_home></h1>
+    	<h3><txp:site_slogan /></h3>
+  	</div>
+  </header>
 
 <!-- navigation -->
-    <nav role="navigation" class="site-navigation row" aria-label="<txp:text item="navigation" />">
-	<div class="large-12 columns">    
-            <txp:section_list default_title='<txp:text item="home" />' include_default="1" wraptag="ul" break="li" class="inline-list">
-			<txp:section title="1" link="1" />
-        </txp:section_list>   
+  <nav role="navigation" class="site-navigation row" aria-label="<txp:text item="navigation" />">
+  	<div class="large-12 columns">    
+      <txp:section_list default_title='<txp:text item="home" />' include_default="1" wraptag="ul" break="li" class="inline-list">
+  		  <txp:section title="1" link="1" />
+      </txp:section_list>   
     </div>
-    </nav>
+  </nav>
         
-        <div class="row">
+  <div class="row">
 
 <!-- left (main) column -->
-            <main role="main" class="large-8 columns" aria-label="<txp:text item="main_content" />">
-                <h1 class="error-status"><txp:error_status /></h1>
-                <p class="error-msg"><txp:error_message /></p>
-            </main>
+    <main role="main" class="large-8 columns" aria-label="<txp:text item="main_content" />">
+      <h1 class="error-status"><txp:error_status /></h1>
+      <p class="error-msg"><txp:error_message /></p>
+    </main>
 
 <!-- right (complementary) column -->
-            <div role="complementary" class="large-4 columns">
-            
-            <txp:output_form form="tf_search_form" />
+    <div role="complementary" class="large-4 columns">
+    
+      <txp:output_form form="tf_search_form" />
 
-                <!-- Feed links, default flavor is rss, so we don't need to specify a flavor on the first feed_link -->
-                <p><txp:feed_link label="RSS" class="feed-rss" /> / <txp:feed_link flavor="atom" label="Atom" class="feed-atom" /></p>
+      <!-- Feed links, default flavor is rss, so we don't need to specify a flavor on the first feed_link -->
+      <p><txp:feed_link label="RSS" class="feed-rss" /> / <txp:feed_link flavor="atom" label="Atom" class="feed-atom" /></p>
 
-                <h4><txp:text item="external_links" /></h4>
-                <txp:linklist wraptag="ul" break="li" class="no-bullet" limit="10" /> <!-- links by default to form: 'plainlinks.link.txp' unless you specify a different form -->
-            </div> <!-- /complementary -->
+      <h4><txp:text item="external_links" /></h4>
+      <txp:linklist wraptag="ul" break="li" class="no-bullet" limit="10" /> <!-- links by default to form: 'plainlinks.link.txp' unless you specify a different form -->
+    </div> <!-- /complementary -->
 
-        </div> <!-- /.row -->
+  </div> <!-- /.row -->
 
 <!-- footer -->
-    <footer role="contentinfo" class="row">
-	<div class="large-12 columns">    
-        <p><small><txp:text item="published_with" /> <a rel="external" href="http://textpattern.com" title="<txp:text item="go_txp_com" />">Textpattern CMS</a>.</small></p>
-	</div>
-    </footer>
+  <footer role="contentinfo" class="row">
+	  <div class="large-12 columns">    
+      <p><small><txp:text item="published_with" /> <a rel="external" href="http://textpattern.com" title="<txp:text item="go_txp_com" />">Textpattern CMS</a>.</small></p>
+	  </div>
+  </footer>
 
-    <!-- add your own JavaScript here -->
-    <txp:output_form form="tf_javascript" />
+  <!-- add your own JavaScript here -->
+  <txp:output_form form="tf_javascript" />
 
 </body>
 </html>

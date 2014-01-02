@@ -1,0 +1,15 @@
+//  LAYOUT HELPERS
+///////////////////////////////////////////////////////////////////////////////
+
+@mixin l-constrained() {
+  margin: 0 auto;
+  max-width: 720px;
+  width: 95%;
+  @media only screen and (min-width: $small-screen) {
+    width: 90%;
+  }
+}
+
+.l-constrained {
+  @include l-constrained();
+}

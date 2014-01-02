@@ -1,0 +1,15 @@
+// UNSTYLED LIST
+.list_unstyled {
+  list-style-type: none;
+}
+
+// INLINE LIST
+.list_inline {
+  list-style-type: none;
+  padding-left: 0;
+  li {
+    @include inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}

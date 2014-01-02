@@ -1,0 +1,38 @@
+%label {
+  @include font-size(1.2);
+  padding: .1em .45em;
+  border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+// DEFAULT LABEL
+.label {
+  @extend %label;
+  background-color: $light-gray;
+}
+
+// LABEL INFO
+.label_info {
+  @extend %label;
+  background-color: $light-blue;
+}
+
+// LABEL SUCCESS
+.label_success {
+  @extend %label;
+  background-color: $green;
+}
+
+// LABEL WARNING
+.label_warning {
+  @extend %label;
+  background-color: $orange;
+}
+
+// LABEL ERROR
+.label_error {
+  @extend %label;
+  background-color: $red;
+}

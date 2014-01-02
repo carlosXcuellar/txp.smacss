@@ -1,24 +1,19 @@
-txp.foundation
+txp.smacss
 ==============
 
-Textpattern &amp; Foundation 4
-
-Using [textpattern-default-theme](https://github.com/textpattern/textpattern-default-theme) as the basis. Have added Foundation 4's JS and CSS and layout classes. More to come...
-
+A barebones Textpattern theme using [SMACSS](http://smacss.com/) guidelines, [Bourbon](http://bourbon.io/) and [Neat](http://bourbon.io/).
 
 Requires [cnk_versioning](https://github.com/whaleen/txp.foundation/blob/master/textpattern/plugins/cnk_versioning.txt) plugin.
 
 
-Live test: [http://wagebyra.com/projects/txp.foundation/](http://wagebyra.com/projects/txp.foundation/)
-
 ## Install
 
-1. Drop [/txp.foundation](https://github.com/whaleen/txp.foundation) in the root directory of your Textpattern project.
-2. Install Textpattern plugin [cnk_versioning](https://github.com/whaleen/txp.foundation/blob/master/textpattern/plugins/cnk_versioning.txt) and edit the path in it's source to point to [/txp.foundation/textpattern/_templates](https://github.com/whaleen/txp.foundation/textpattern/_templates). Follow cnk_versioning's own instructions via the plugin's help if you are not already familiar with how it works.
+1. Drop [/txp.smacss](https://github.com/cuellarllar/txp.smacss) in the root directory of your Textpattern project.
+2. Install Textpattern plugin [cnk_versioning](https://github.com/whaleen/txp.smacss/blob/master/textpattern/plugins/cnk_versioning.txt) and edit the path in it's source to point to [/txp.smacss/textpattern/_templates](https://github.com/cuellarllar/txp.smacss/textpattern/_templates). Follow cnk_versioning's own instructions via the plugin's help if you are not already familiar with how it works.
 3. Sally forth.
 
 ## Using Sass
 
-    $ cd txp.foundation 
+    $ cd txp.smacss 
     $ gem install sass
     $ sass --watch scss:css
