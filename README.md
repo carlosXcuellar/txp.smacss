@@ -1,9 +1,9 @@
 txp.smacss
 ==============
 
-A barebones Textpattern theme using [Bourbon](http://bourbon.io/) and [Neat](http://bourbon.io/) and following [SMACSS](http://smacss.com/) guidelines.
+A barebones Textpattern theme using [Bourbon](http://bourbon.io/) and [Neat](http://neat.bourbon.io/) and following [SMACSS](http://smacss.com/) guidelines.
 
-Requires [cnk_versioning](https://github.com/whaleen/txp.foundation/blob/master/textpattern/plugins/cnk_versioning.txt) plugin.
+Requires [cnk_versioning](https://github.com/cuellarllar/txp.smacss/blob/master/textpattern/plugins/cnk_versioning.txt) plugin.
 
 
 ## Install
