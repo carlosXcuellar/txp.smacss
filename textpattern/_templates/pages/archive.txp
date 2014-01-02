@@ -29,6 +29,8 @@
 
 	<link rel="stylesheet" href="<txp:site_url />txp.smacss/css/application.css">
 
+  <script src="<txp:site_url />txp.smacss/js/vendor/custom.modernizr.js"></script>   
+
 </head>
 
 <body class="<txp:section />-page">
