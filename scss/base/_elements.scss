@@ -62,9 +62,13 @@ a {
     color: $hover-link-color;
   }
 
-  &:active, &:focus {
+  &:active {
     outline: none;
     color: $hover-link-color;
+  }
+  &:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
   }
 }
 
@@ -114,41 +118,4 @@ blockquote {
   padding-left: $base-line-height / 2;
   border-left: 2px solid $base-border-color;
   color: lighten($base-font-color, 15);
-}
-
-// ALIGNMENT
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-justify {
-  text-align: justify;
-}
-
-// LISTS
-ul, ol {
-  margin: 0;
-  margin-bottom: $base-line-height / 2;
-  padding: 0;
-  padding-left: $base-line-height;
-}
-
-dl {
-  margin-bottom: $base-line-height / 2;
-  line-height: $base-line-height;
-  dt {
-    margin-top: $base-line-height / 2;
-    font-weight: bold;
-  }
-  dd {
-    margin: 0;
-  }
 }

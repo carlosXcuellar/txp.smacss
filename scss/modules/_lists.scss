@@ -1,10 +1,29 @@
+ul, ol {
+  margin: 0;
+  margin-bottom: $base-line-height / 2;
+  padding: 0;
+  padding-left: $base-line-height;
+}
+
+dl {
+  margin-bottom: $base-line-height / 2;
+  line-height: $base-line-height;
+  dt {
+    margin-top: $base-line-height / 2;
+    font-weight: bold;
+  }
+  dd {
+    margin: 0;
+  }
+}
+
 // UNSTYLED LIST
-.list_unstyled {
+.list--unstyled {
   list-style-type: none;
 }
 
 // INLINE LIST
-.list_inline {
+.list--inline {
   display: inline;
   padding-left: 0;
   list-style-type: none;

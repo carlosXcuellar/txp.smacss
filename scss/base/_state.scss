@@ -58,3 +58,41 @@
 .is-invisible {
   visibility: hidden;
 }
+
+
+// FLOATS AND ALIGNMENTS
+///////////////////////////////////////////////////////////////////////////////
+
+.is-right {
+  float: right;
+}
+
+.is-left {
+  float: left;
+}
+
+// TEXT ALIGNMENT
+.is-text-left {
+  text-align: left;
+}
+
+.is-text-right {
+  text-align: right;
+}
+
+.is-text-center {
+  text-align: center;
+}
+
+.is-text-justify {
+  text-align: justify;
+}
+
+// CLEARFIX HACK
+.clearfix {
+  @include clearfix;
+}
+
+.clear {
+  clear: both;
+}

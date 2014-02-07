@@ -7,7 +7,7 @@
 }
 
 // ALERT ERROR
-.alert_error {
+.alert--error {
   @extend %alert;
   background: $error-color;
   a {
@@ -19,7 +19,7 @@
 }
 
 // ALERT WARNING
-.alert_warning {
+.alert--warning {
   @extend %alert;
   background: $notice-color;
   a {
@@ -31,7 +31,7 @@
 }
 
 // ALERT SUCCESS
-.alert_success {
+.alert--success {
   @extend %alert;
   background: $success-color;
   a {
@@ -43,7 +43,7 @@
 }
 
 // ALERT INFO
-.alert_info {
+.alert--info {
   @extend %alert;
   background: $light-blue;
   a {

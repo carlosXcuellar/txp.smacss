@@ -14,25 +14,25 @@
 }
 
 // LABEL INFO
-.label_info {
+.label--info {
   @extend %label;
   background-color: $light-blue;
 }
 
 // LABEL SUCCESS
-.label_success {
+.label--success {
   @extend %label;
   background-color: $green;
 }
 
 // LABEL WARNING
-.label_warning {
+.label--warning {
   @extend %label;
   background-color: $orange;
 }
 
 // LABEL ERROR
-.label_error {
+.label--error {
   @extend %label;
   background-color: $red;
 }

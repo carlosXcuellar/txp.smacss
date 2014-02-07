@@ -13,13 +13,13 @@
   padding: 10px;
 }
 
-.l-header--brand {
+.l-header__brand {
   @include media($small-screen)  {
     @include span-columns(8);
   }
 }
 
-.l-header--nav {
+.l-header__nav {
   @include media($small-screen)  {
     @include span-columns(4);
     text-align: right;
@@ -52,27 +52,16 @@
   border-top: 1px dashed $light-gray;
 }
 
-.l-footer--nav {
+.l-footer__nav {
   @include media($small-screen)  {
     @include span-columns(8);
   }
 }
 
-.l-footer--credits {
+.l-footer__credits {
   @include media($small-screen)  {
     @include span-columns(4);
     text-align: right;
   }
   padding-left: 5px;
-}
-
-// LAYOUT HELPERS
-///////////////////////////////////////////////////////////////////////////////
-
-.l-right {
-  float: right;
-}
-
-.l-left {
-  float: left;
 }

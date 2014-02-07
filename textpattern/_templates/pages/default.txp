@@ -51,11 +51,11 @@
 
     <!-- header and navigation -->
     <header role="banner" class="l-header">
-    	<div class="l-header--brand">
+    	<div class="l-header__brand">
         <h1><txp:link_to_home><txp:site_name /></txp:link_to_home></h1>
   	    <h3><txp:site_slogan /></h3>
       </div>
-      <div class="l-header--nav">
+      <div class="l-header__nav">
         <txp:output_form form="tf_primary_navigation" />
       </div>
     </header>
@@ -146,14 +146,14 @@
 
   <!-- footer -->
   <footer role="contentinfo" class="l-footer">
-    <nav role="navigation" class="l-footer--nav" aria-label="<txp:text item="navigation" />">
+    <nav role="navigation" class="l-footer__nav" aria-label="<txp:text item="navigation" />">
       <txp:section_list default_title='<txp:text item="home" />' include_default="1" wraptag="ul" break="" class="list_inline">
         <li<txp:if_section name='<txp:section />'><txp:if_search><txp:else /><txp:if_category><txp:else /><txp:if_author><txp:else /> class="active"</txp:if_author></txp:if_category></txp:if_search></txp:if_section>>
           <txp:section title="1" link="1" />
         </li>
       </txp:section_list>
     </nav>
-    <div class="l-footer--credits">
+    <div class="l-footer__credits">
       <txp:text item="published_with" /> <a rel="external" href="http://textpattern.com" title="<txp:text item="go_txp_com" />">Textpattern CMS</a>.
     </div>
   </footer>

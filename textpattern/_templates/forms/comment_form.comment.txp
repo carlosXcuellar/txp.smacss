@@ -2,7 +2,7 @@
 
 <!-- if there is an error, then inform user -->
 <txp:if_comments_error>
-  <txp:comments_error wraptag="ol" break="li" class="alert_error" />
+  <txp:comments_error wraptag="ol" break="li" class="alert--error" />
 </txp:if_comments_error>
 
 <fieldset>
