@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="<txp:lang />" dir="<txp:text item="lang_dir" />">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7 lang="<txp:lang />" dir="<txp:text item="lang_dir" />""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="<txp:lang />" dir="<txp:text item="lang_dir" />"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="<txp:lang />" dir="<txp:text item="lang_dir" />"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="<txp:lang />" dir="<txp:text item="lang_dir" />"> <!--<![endif]-->
 
 <head>
   <title><txp:error_status /></title>
@@ -15,9 +18,7 @@
 
 <!-- css -->
 
-	<link rel="stylesheet" href="<txp:site_url />txp.smacss/css/application.css">
-
-  <script src="<txp:site_url />txp.smacss/js/vendor/custom.modernizr.js"></script>   
+	<link rel="stylesheet" href="<txp:site_url />txp.smacss/css/application.css"> 
 
 </head>
 
